@@ -2,18 +2,6 @@ const status = ["Non démarré", "En cours", "Terminé"];
 const taskList = [];
 let taskId = 0;
 
-// Bouton menu
-//const menuButton = document.querySelector(".bouton_menu"); //recuperer ID boutton menu
-//const dropDownMenu = document.querySelector(".dropDownMenu");
-
-// mettre un display none sur le menu déroulant
-//menuButton.addEventListener("click", () => {
-//	dropDownMenu.classList.toggle("visible"); //ajouter .visible au css avec un display block
-//});
-
-// Supprimer une tâche
-//const deleteButton = document.querySelector; //recupérer ID bouton supprimer
-
 const menuButton = document.querySelector(".bouton_menu");
 const dropDownMenu = document.querySelector(".dropDownMenu");
 
@@ -117,11 +105,11 @@ function displayNewTask(taskList) {
 
 	/* ajouter les options du status */
 
-	let listValues = ["unstarted", "current", "finished"];
-	let listTexUser = ["Non démarré", "En cours", "Terminé"];
+	const listValues = ["unstarted", "current", "finished"];
+	const listTexUser = ["Non démarré", "En cours", "Terminé"];
 
 	for (let i = 0; i < listTexUser.length; i++) {
-		let optionSelectStatus = document.createElement("option");
+		const optionSelectStatus = document.createElement("option");
 		optionSelectStatus.value = listValues[i];
 		optionSelectStatus.textContent = listTexUser[i];
 		articleSelectStatus.appendChild(optionSelectStatus);
@@ -157,8 +145,6 @@ function displayNewTask(taskList) {
 			taskTextArea.disabled = true;
 			buttonDelete.disabled = false;
 			buttonEdit.textContent = "Edit";
-
-			//article.classList.replace(`${classTask}`, "Nouveau-Statut");
 		}
 	});
 
