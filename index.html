@@ -8,7 +8,8 @@
     <link
       rel="icon"
       type="image/png"
-      href="../public/images/favicon/favicon.ico"/>
+      href="../public/images/favicon/favicon.ico"
+    />
   </head>
 
   <body>
@@ -23,7 +24,8 @@
         <img
           class="bouton_menu"
           src="../public/images/bouton_menu.png"
-          alt="bouton menu"/>
+          alt="bouton menu"
+        />
         <ul class="dropDownMenu">
           <li>
             <a
@@ -47,36 +49,43 @@
       <!-- formulaire -->
       <section id="form-section">
         <article id="form-article">
-          <textarea name="text" id="add-task" placeholder="Nom de la tâche" rows="2" cols="33" required></textarea>
+          <textarea
+            name="text"
+            id="add-task"
+            placeholder="Nom de la tâche"
+            rows="2"
+            cols="33"
+            required
+          ></textarea>
           <div id="status-category-article">
             <div class="style-form">
               <h3>Statut</h3>
               <div class="option">
-              <select name="status-article" id="select-status-article">
+                <select name="status-article" id="select-status-article">
                   <option value="unstarted">Non démarré</option>
                   <option value="current">En cours</option>
                   <option value="finished">Terminé</option>
-              </select>
+                </select>
+              </div>
             </div>
           </div>
-          </div>
-            
-            <button  id="send-button"><span>&#x2713;</span></button>
-         
+
+          <button id="send-button"><span>&#x2713;</span></button>
         </article>
       </section>
-      <section class="tasks">
-      
-      </section>
+      <section class="tasks"></section>
     </main>
     <footer>
       <section>
         <p>Copyright &copy; 2024</p>
         <p>Mentions légales</p>
-        <p>Images from <a target="_blank" href="https://fr.freepik.com/">freepik</a></p>
+        <p>
+          Images from
+          <a target="_blank" href="https://fr.freepik.com/">freepik</a>
+        </p>
         <p>Task Force Team</p>
       </section>
     </footer>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
